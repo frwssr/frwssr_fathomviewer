@@ -1,0 +1,8 @@
+{
+    "lang": "de-de",
+    "Fathom Viewer": "Fathom Viewer",
+    "Fathom Viewer app": "Fathom Viewer-App",
+    "Dashboard ID": "Dashboard Site ID (8-stellig, sieht etwa so aus: „hgfeabcd“)",
+    "Password": "Sharing-Passwort (wenn notwendig)",
+    "No URL alert": "Es wurde keine Fathom Dashboard Site ID gesetzt. Bitte ergänze diese in den <a href='../../../core/settings/#frwssr_fathomviewer'>Perch Einstellungen</a> (und falls notwendig, auch das Sharing-Passwort)."
+}
