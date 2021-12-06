@@ -9,3 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## v1.0 - 2021-11-16
 ### Added
 - Initial version.
+
+## v1.0 - 2021-12-06
+### Fixed…
+- …missing include of `_version.php` in `admin.php`.
