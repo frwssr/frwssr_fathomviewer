@@ -26,8 +26,8 @@ if (!$Settings->get('frwssr_fathomviewer_pageid')->settingValue()) {
 	echo '<header class="title-panel"><h1>' . $Lang->get('Fathom Viewer') . '</h1><div class="notifications"></div></header>';
 } else {
 	echo '<header class="title-panel"><h1>' . $Lang->get('Fathom Viewer') . '</h1><div class="notifications"></div></header>';
-    echo '<iframe id="fathom-viewer-iframe" src="https://app.usefathom.com/share/' . $Settings->get('frwssr_fathomviewer_pageid')->settingValue() . '/wordpress?password=' . hash("sha256", $Settings->get("frwssr_fathomviewer_password")->settingValue()) . '" style="width: 1px;min-width: 100%; height:1000px; max-width:1100px" frameborder="0" onload=fathomInitResizeIframe();></iframe>';
-};
+    echo '<iframe id="fathom-viewer-iframe" src="https://app.usefathom.com/share/' . $Settings->get('frwssr_fathomviewer_pageid')->settingValue() . '/wordpress' . ($Settings->get("frwssr_fathomviewer_password")->settingValue() != '' ? '?password=' . hash("sha256", $Settings->get("frwssr_fathomviewer_password")->settingValue()) : '') . '" style="width: 1px;min-width: 100%; height:1000px; max-width:1100px" frameborder="0" onload=fathomInitResizeIframe();></iframe>';
+	};
 
 // Perch Frame
 include(PERCH_CORE . '/inc/btm.php');
